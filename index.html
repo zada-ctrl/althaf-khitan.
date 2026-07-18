@@ -1,1 +1,41 @@
-content://com.google.android.apps.search.assistant.surfaces.voice.robin.fileprovider/attachments/Walimatul-Khitan/index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Walimatul Khitan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Cinzel:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-ornament"><i class="fa-solid fa-mosque"></i></div>
+            <div class="loader-spinner"></div>
+            <p>Memuat Undangan Premium...</p>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTAINER -->
+    <div id="app" style="display: none;">
+        <!-- ISI UNDANGAN UTAMA -->
+        <div style="text-align: center; padding: 50px 20px; font-family: 'Plus Jakarta Sans', sans-serif;">
+            <h1 style="font-family: 'Cinzel', serif; color: #bf9456;">Walimatul Khitan</h1>
+            <p>Selamat Datang di Undangan Digital</p>
+            <p id="guest-name" style="font-weight: bold; font-size: 1.2rem; margin: 20px 0; color: #1f2937;"></p>
+            <button id="btn-open" class="btn-premium" style="cursor: pointer; padding: 12px 30px; background: linear-gradient(135deg, #bf9456, #8b6f37); color: white; border: none; border-radius: 30px; font-family: 'Cinzel', serif;">
+                Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
