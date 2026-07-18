@@ -3,33 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Walimatul Khitan</title>
+    <title>Undangan Walimatul Khitan - Althaf</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- LOADING SCREEN -->
     <div id="loader" class="loader-container">
         <div class="loader-content">
+            <div class="loader-spinner"></div>
             <p>Memuat Undangan Premium...</p>
         </div>
     </div>
 
-    <!-- HALAMAN WELCOME -->
-    <div id="app" style="display: none; text-align: center; padding: 50px 20px;">
-        <h1 style="font-family: 'Cinzel', serif; color: #bf9456;">Walimatul Khitan</h1>
-        <p id="guest-name" style="margin: 20px 0;"></p>
-        <button id="btn-open" class="btn-premium">Buka Undangan</button>
+    <!-- SAMPUL DEPAN -->
+    <div id="app" style="display: none; text-align: center; padding: 100px 20px; background-color: #FAF8F2; min-height: 100vh;">
+        <h1 style="font-family: 'Cinzel', serif; color: #bf9456; margin-bottom: 10px; font-size: 2rem;">WALIMATUL KHITAN</h1>
+        <p style="color: #4b5563; margin-bottom: 40px;">Undangan Digital Premium</p>
+        
+        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: inline-block; width: 100%; max-width: 320px; margin-bottom: 40px;">
+            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 5px;">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+            <h2 id="guest-name" style="font-size: 1.2rem; color: #1f2937; font-weight: 700;">Tamu Undangan</h2>
+        </div>
+        <br>
+        <button id="btn-open" class="btn-premium" style="cursor: pointer;"><i class="fa-solid fa-envelope-open" style="margin-right: 8px;"></i> Buka Undangan</button>
     </div>
 
-    <!-- ISI UNDANGAN (Awalnya tersembunyi) -->
-    <div id="undangan-lengkap" style="display: none; padding: 20px;">
-        <h2 style="color: #064E3B;">Alhamdulillah</h2>
-        <p>Dengan memohon rahmat Allah SWT, kami mengundang Bapak/Ibu untuk hadir di acara khitan putra kami.</p>
-        <!-- Nanti kamu bisa tambahkan lokasi, tanggal, dll di sini -->
+    <!-- ISI UNDANGAN UTAMA -->
+    <div id="undangan-lengkap" style="display: none; background-color: #FAF8F2; min-height: 100vh; padding: 40px 20px; text-align: center;">
+        <div style="margin-bottom: 40px;">
+            <p style="font-size: 1.5rem; color: #064E3B; margin-bottom: 15px;">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; max-width: 400px; margin: 0 auto;">
+                Assalamu'alaikum Warahmatullahi Wabarakatuh.<br>
+                Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan acara syukuran walimatul khitan putra kami:
+            </p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <h1 style="font-family: 'Cinzel', serif; color: #bf9456; font-size: 1.8rem; margin-bottom: 10px;">Muhammad Althaf</h1>
+            <p style="color: #6b7280; font-size: 0.9rem;">Putra dari Bapak & Ibu Zada</p>
+        </div>
+
+        <div style="background: white; padding: 30px 20px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); max-width: 400px; margin: 0 auto 40px auto;">
+            <h3 style="color: #064E3B; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid #FAF8F2; padding-bottom: 10px;">
+                <i class="fa-solid fa-calendar-days" style="color: #bf9456; margin-right: 8px;"></i> PELAKSANAAN ACARA
+            </h3>
+            <p style="font-weight: 700; color: #1f2937; margin-bottom: 5px;">Hari / Tanggal</p>
+            <p style="color: #4b5563; margin-bottom: 20px;">Minggu, 26 Juli 2026</p>
+            <p style="font-weight: 700; color: #1f2937; margin-bottom: 5px;">Waktu</p>
+            <p style="color: #4b5563; margin-bottom: 20px;">09.00 WIB s/d Selesai</p>
+            <p style="font-weight: 700; color: #1f2937; margin-bottom: 5px;">Tempat / Kediaman</p>
+            <p style="color: #4b5563; line-height: 1.5;">Rumah Kediaman Bapak Zada</p>
+        </div>
+
+        <div style="max-width: 400px; margin: 0 auto;">
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 30px;">
+                Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.<br><br>
+                Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+            </p>
+            <p style="color: #6b7280; font-size: 0.85rem;">Kami yang berbahagia,<br><strong style="color: #1f2937; font-size: 1rem;">Keluarga Besar Bapak Zada</strong></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
+        </html>
+        
